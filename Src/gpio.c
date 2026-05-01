@@ -57,7 +57,7 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pin = IIC_SCL_A_Pin|IIC_SDA_A_Pin|IIC_SCL_B_Pin|IIC_SCL_BC3_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pins : MotorA_EN_Pin MotorB_EN_Pin */
